@@ -174,7 +174,7 @@ public class GincanaTransferirTest {
         qtdInscritoField.set(gincanaOrigem, 30);
 
         Method transferir = Gincana.class.getDeclaredMethod("transferir", Gincana.class, Integer.class);
-        transferir.invoke(gincanaOrigem, null, 5);
+        transferir.invoke(gincanaOrigem,null, 5);
 
         qtdInscritoField = Gincana.class.getDeclaredField("qtdInscrito");
         qtdInscritoField.setAccessible(true);
